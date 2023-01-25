@@ -5,13 +5,13 @@ import 'package:clean_arch_resocoder/features/number_trivia/domain/repositories/
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 
-class GetConcreteNumberTrivia extends UseCase<NumberTrivia, Params> {
+class GetConcreteNumberTrivia extends UseCase<NumberTrivia?, Params> {
   final NumberTriviaRepository repository;
 
   GetConcreteNumberTrivia(this.repository);
 
   @override
-  Future<Either<Failure, NumberTrivia>?> call(Params params) async {
+  Future<Either<Failure, NumberTrivia?>?> call(Params params) async {
     return await repository.getConcreteNumberTrivia(params.number);
   }
 }
