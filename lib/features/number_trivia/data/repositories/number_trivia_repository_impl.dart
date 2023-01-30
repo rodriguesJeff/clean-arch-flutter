@@ -1,5 +1,5 @@
 import 'package:clean_arch_resocoder/core/error/exception.dart';
-import 'package:clean_arch_resocoder/core/platform/network_info.dart';
+import 'package:clean_arch_resocoder/core/network/network_info.dart';
 import 'package:clean_arch_resocoder/features/number_trivia/data/datasources/number_trivia_local_datasource.dart';
 import 'package:clean_arch_resocoder/features/number_trivia/data/datasources/number_trivia_remove_datasource.dart';
 import 'package:clean_arch_resocoder/features/number_trivia/domain/entities/number_trivia.dart';
